@@ -1,0 +1,4 @@
+﻿  MainWindow.cpp
+  MainWindow.obj : Módulo MSIL encontrado; vínculo incremental está desabilitado para MSIL; executando link completo
+LINK : error LNK2001: símbolo externo nao resolvido main
+C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.exe : fatal error LNK1120: 1 externo nao resolvidos
