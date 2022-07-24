@@ -1,3 +1,5 @@
 C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.vcxproj.AssemblyReference.cache
 C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.exe
+C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.MainWindow.resources
+C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.vcxproj.GenerateResource.cache

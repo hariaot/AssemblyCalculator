@@ -124,11 +124,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Asm.h" />
+    <ClInclude Include="Tabela.h" />
     <ClInclude Include="Equacao.h" />
     <ClInclude Include="MainWindow.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Polonesa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
