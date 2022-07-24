@@ -122,6 +122,7 @@ namespace AssemblyCalculator {
 			this->btnPolonesa->TabIndex = 4;
 			this->btnPolonesa->Text = L"Mostrar Polonesa";
 			this->btnPolonesa->UseVisualStyleBackColor = true;
+			this->btnPolonesa->Click += gcnew System::EventHandler(this, &MainWindow::btnPolonesa_Click);
 			// 
 			// lbWarning
 			// 
@@ -169,14 +170,15 @@ namespace AssemblyCalculator {
 	private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 	private: System::Void btnOK_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->lbWarning->Text = equacao->InserirNumero(this->txtB1->Text);
+		this->lbWarning->Text = "Inserido";
+		equacao->Inserir(this->txtB1->Text);
 		this->lbEquacao->Text = equacao->MostrarEquacao();
 		this->txtB1->Text = "";
 
 
 	}
 	private: System::Void btnEquacao_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->txtB1->Text = equacao->MostrarEquacao();
+		this->lbEquacao->Text = equacao->MostrarEquacao();
 		this->lbWarning->Text = "";
 	}
 private: System::Void btnClear_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -184,6 +186,10 @@ private: System::Void btnClear_Click(System::Object^ sender, System::EventArgs^ 
 	this->lbWarning->Text = "Limpa";
 	this->txtB1->Text = "";
 	this->lbEquacao->Text = "";
+}
+private: System::Void btnPolonesa_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->lbEquacao->Text = equacao->MostrarPolonesa();
+	this->lbWarning->Text = "";
 }
 };
 }
