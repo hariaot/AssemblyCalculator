@@ -32,3 +32,5 @@
 *.app
 /.vs/AssemblyCalculator/v17/Browse.VC.opendb
 /.vs/AssemblyCalculator/v17/Browse.VC.db-wal
+/.vs
+.vs
