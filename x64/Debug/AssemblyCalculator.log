@@ -1,4 +1,4 @@
 ﻿  MainWindow.cpp
-C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\MainWindow.cpp(7,1): warning C4829: Parâmetros possivelmente incorretos para função main. Considere o uso de 'int main(Platform::Array<Platform::String^>^ argv)'
+C:\Unesp\Micro\meuTP\AssemblyCalculator\MainWindow.cpp(7,1): warning C4829: Parâmetros possivelmente incorretos para função main. Considere o uso de 'int main(Platform::Array<Platform::String^>^ argv)'
   MainWindow.obj : Módulo MSIL encontrado; vínculo incremental está desabilitado para MSIL; executando link completo
-  AssemblyCalculator.vcxproj -> C:\Users\user\Documents\Faculdade\Micro\AssemblyCalculator\x64\Debug\AssemblyCalculator.exe
+  AssemblyCalculator.vcxproj -> C:\Unesp\Micro\meuTP\AssemblyCalculator\x64\Debug\AssemblyCalculator.exe
