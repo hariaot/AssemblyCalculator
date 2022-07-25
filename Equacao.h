@@ -147,21 +147,6 @@ public:
 		return;
 	}
 
-	void InserirFuncao(String^ digito)
-	{
-		string funcao = marshal_as<string>(digito);
-		if (input.empty()) input = "";
-		if (input.length() == 1 && input.back() == '0')
-		{
-			input = funcao;
-		}
-		else
-		{
-			input += funcao;
-		}
-		return;
-	}
-
 	void Inserir(String^ digito)
 	{
 		InserirNumero(digito);
