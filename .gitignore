@@ -34,6 +34,7 @@
 /.vs/AssemblyCalculator/v17/Browse.VC.db-wal
 
 
+
 Skip to content
 Pull requests
 Issues
@@ -485,3 +486,7 @@ Footer navigation
     About
 
 x64
+=======
+/.vs
+.vs
+
