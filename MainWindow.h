@@ -165,6 +165,7 @@ private: System::Windows::Forms::Button^ btnDECIMAL;
 private: System::Windows::Forms::Button^ btnPi;
 private: System::Windows::Forms::Button^ btnClearAll;
 private: System::Windows::Forms::TextBox^ txtbSaida;
+private: System::Windows::Forms::Label^ titulo;
 
 
 
@@ -268,13 +269,16 @@ private: System::Windows::Forms::TextBox^ txtbSaida;
             this->btnPi = (gcnew System::Windows::Forms::Button());
             this->btnClearAll = (gcnew System::Windows::Forms::Button());
             this->txtbSaida = (gcnew System::Windows::Forms::TextBox());
+            this->titulo = (gcnew System::Windows::Forms::Label());
             this->SuspendLayout();
             // 
             // lbHistorico
             // 
             this->lbHistorico->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-            this->lbHistorico->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-            this->lbHistorico->Location = System::Drawing::Point(25, 36);
+            this->lbHistorico->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->lbHistorico->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+            this->lbHistorico->Location = System::Drawing::Point(25, 53);
             this->lbHistorico->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
             this->lbHistorico->Name = L"lbHistorico";
             this->lbHistorico->Size = System::Drawing::Size(379, 18);
@@ -927,13 +931,25 @@ private: System::Windows::Forms::TextBox^ txtbSaida;
             this->txtbSaida->BorderStyle = System::Windows::Forms::BorderStyle::None;
             this->txtbSaida->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 25));
             this->txtbSaida->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->txtbSaida->Location = System::Drawing::Point(26, 57);
+            this->txtbSaida->Location = System::Drawing::Point(26, 74);
             this->txtbSaida->Name = L"txtbSaida";
             this->txtbSaida->ReadOnly = true;
             this->txtbSaida->Size = System::Drawing::Size(377, 38);
             this->txtbSaida->TabIndex = 49;
             this->txtbSaida->Text = L"0";
             this->txtbSaida->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
+            // 
+            // titulo
+            // 
+            this->titulo->AutoSize = true;
+            this->titulo->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->titulo->ForeColor = System::Drawing::SystemColors::ButtonFace;
+            this->titulo->Location = System::Drawing::Point(12, 9);
+            this->titulo->Name = L"titulo";
+            this->titulo->Size = System::Drawing::Size(87, 18);
+            this->titulo->TabIndex = 87;
+            this->titulo->Text = L"Calculadora";
             // 
             // MainWindow
             // 
@@ -942,6 +958,7 @@ private: System::Windows::Forms::TextBox^ txtbSaida;
             this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(44)), static_cast<System::Int32>(static_cast<System::Byte>(44)),
                 static_cast<System::Int32>(static_cast<System::Byte>(44)));
             this->ClientSize = System::Drawing::Size(431, 425);
+            this->Controls->Add(this->titulo);
             this->Controls->Add(this->button1);
             this->Controls->Add(this->domainUpDown1);
             this->Controls->Add(this->checkBox1);
