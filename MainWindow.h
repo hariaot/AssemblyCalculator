@@ -296,6 +296,7 @@ private: System::Windows::Forms::TextBox^ txtbSaida;
             this->button1->TabIndex = 86;
             this->button1->Text = L"x";
             this->button1->UseVisualStyleBackColor = false;
+            this->button1->Click += gcnew System::EventHandler(this, &MainWindow::button1_Click);
             // 
             // domainUpDown1
             // 
@@ -431,6 +432,7 @@ private: System::Windows::Forms::TextBox^ txtbSaida;
             this->btnRESULTADO->TabIndex = 78;
             this->btnRESULTADO->Text = L"=";
             this->btnRESULTADO->UseVisualStyleBackColor = false;
+            this->btnRESULTADO->Click += gcnew System::EventHandler(this, &MainWindow::btnRESULTADO_Click);
             // 
             // btnBackSpace
             // 
@@ -1041,6 +1043,12 @@ private: System::Void btn8_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void btn9_Click(System::Object^ sender, System::EventArgs^ e) {
     this->txtbSaida->Text += "9";
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+    Application::Exit();
+}
+private: System::Void btnRESULTADO_Click(System::Object^ sender, System::EventArgs^ e) {
+    this->lbHistorico->Text = this->txtbSaida->Text;
 }
 };
 }
