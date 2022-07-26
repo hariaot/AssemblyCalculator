@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 namespace AssemblyCalculator {
 
@@ -36,95 +36,6 @@ namespace AssemblyCalculator {
 		}
 
 	protected:
-
-
-
-
-	protected:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 private: System::Windows::Forms::Label^ lbHistorico;
 private: System::Windows::Forms::Button^ button1;
@@ -167,52 +78,6 @@ private: System::Windows::Forms::Button^ btnPi;
 private: System::Windows::Forms::Button^ btnClearAll;
 private: System::Windows::Forms::TextBox^ txtbSaida;
 private: System::Windows::Forms::Label^ titulo;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	protected:
 
