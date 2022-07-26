@@ -129,7 +129,8 @@ namespace AssemblyCalculator {
 private: System::Windows::Forms::Label^ lbHistorico;
 private: System::Windows::Forms::Button^ button1;
 private: System::Windows::Forms::DomainUpDown^ domainUpDown1;
-private: System::Windows::Forms::CheckBox^ checkBox1;
+private: System::Windows::Forms::CheckBox^ boxInverter;
+
 private: System::Windows::Forms::Button^ btnDIV;
 private: System::Windows::Forms::Button^ btnMUL;
 private: System::Windows::Forms::Button^ btnSUB;
@@ -233,7 +234,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->lbHistorico = (gcnew System::Windows::Forms::Label());
             this->button1 = (gcnew System::Windows::Forms::Button());
             this->domainUpDown1 = (gcnew System::Windows::Forms::DomainUpDown());
-            this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+            this->boxInverter = (gcnew System::Windows::Forms::CheckBox());
             this->btnDIV = (gcnew System::Windows::Forms::Button());
             this->btnMUL = (gcnew System::Windows::Forms::Button());
             this->btnSUB = (gcnew System::Windows::Forms::Button());
@@ -312,7 +313,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->domainUpDown1->ForeColor = System::Drawing::SystemColors::ButtonFace;
             this->domainUpDown1->Items->Add(L"Graus");
             this->domainUpDown1->Items->Add(L"Radianos");
-            this->domainUpDown1->Location = System::Drawing::Point(28, 150);
+            this->domainUpDown1->Location = System::Drawing::Point(29, 150);
             this->domainUpDown1->Name = L"domainUpDown1";
             this->domainUpDown1->ReadOnly = true;
             this->domainUpDown1->Size = System::Drawing::Size(96, 17);
@@ -322,18 +323,19 @@ private: System::Windows::Forms::Label^ titulo;
             this->domainUpDown1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             this->domainUpDown1->UpDownAlign = System::Windows::Forms::LeftRightAlignment::Left;
             // 
-            // checkBox1
+            // boxInverter
             // 
-            this->checkBox1->AutoSize = true;
-            this->checkBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->boxInverter->AutoSize = true;
+            this->boxInverter->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->checkBox1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->checkBox1->Location = System::Drawing::Point(130, 150);
-            this->checkBox1->Name = L"checkBox1";
-            this->checkBox1->Size = System::Drawing::Size(41, 19);
-            this->checkBox1->TabIndex = 84;
-            this->checkBox1->Text = L"Inv";
-            this->checkBox1->UseVisualStyleBackColor = true;
+            this->boxInverter->ForeColor = System::Drawing::SystemColors::ButtonFace;
+            this->boxInverter->Location = System::Drawing::Point(132, 150);
+            this->boxInverter->Name = L"boxInverter";
+            this->boxInverter->Size = System::Drawing::Size(41, 19);
+            this->boxInverter->TabIndex = 84;
+            this->boxInverter->Text = L"Inv";
+            this->boxInverter->UseVisualStyleBackColor = true;
+            this->boxInverter->CheckedChanged += gcnew System::EventHandler(this, &MainWindow::boxInverter_CheckedChanged);
             // 
             // btnDIV
             // 
@@ -454,6 +456,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnBackSpace->TabIndex = 77;
             this->btnBackSpace->Text = L"C";
             this->btnBackSpace->UseVisualStyleBackColor = false;
+            this->btnBackSpace->Click += gcnew System::EventHandler(this, &MainWindow::btnBackSpace_Click);
             // 
             // btnFCP
             // 
@@ -923,6 +926,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnClearAll->TabIndex = 50;
             this->btnClearAll->Text = L"CE";
             this->btnClearAll->UseVisualStyleBackColor = false;
+            this->btnClearAll->Click += gcnew System::EventHandler(this, &MainWindow::btnClearAll_Click);
             // 
             // txtbSaida
             // 
@@ -961,7 +965,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->Controls->Add(this->titulo);
             this->Controls->Add(this->button1);
             this->Controls->Add(this->domainUpDown1);
-            this->Controls->Add(this->checkBox1);
+            this->Controls->Add(this->boxInverter);
             this->Controls->Add(this->btnDIV);
             this->Controls->Add(this->btnMUL);
             this->Controls->Add(this->btnSUB);
@@ -1032,40 +1036,105 @@ private: System::Void checkBox1_CheckedChanged(System::Object^ sender, System::E
  // Botoes Numerais
 
 private: System::Void btn0_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "0";
+    if (this->txtbSaida->Text != "0") {
+        this->txtbSaida->Text += "0";
+    }
+
 }
 private: System::Void btn1_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "1";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "1";
+    }
+    else {
+        this->txtbSaida->Text += "1";
+    }
 }
 private: System::Void btn2_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "2";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "2";
+    }
+    else {
+        this->txtbSaida->Text += "2";
+    }
 }
 private: System::Void btn3_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "3";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "3";
+    }
+    else {
+        this->txtbSaida->Text += "3";
+    }
 }
 private: System::Void btn4_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "4";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "4";
+    }
+    else {
+        this->txtbSaida->Text += "4";
+    }
 }
 private: System::Void btn5_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "5";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "5";
+    }
+    else {
+        this->txtbSaida->Text += "5";
+    }
 }
 private: System::Void btn6_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "6";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "6";
+    }
+    else {
+        this->txtbSaida->Text += "6";
+    }
 }
 private: System::Void btn7_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "7";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "7";
+    }
+    else {
+        this->txtbSaida->Text += "7";
+    }
 }
 private: System::Void btn8_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "8";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "8";
+    }
+    else {
+        this->txtbSaida->Text += "8";
+    }
 }
 private: System::Void btn9_Click(System::Object^ sender, System::EventArgs^ e) {
-    this->txtbSaida->Text += "9";
+    if (this->txtbSaida->Text == "0") {
+        this->txtbSaida->Text = "9";
+    }
+    else {
+        this->txtbSaida->Text += "9";
+    }
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
     Application::Exit();
 }
 private: System::Void btnRESULTADO_Click(System::Object^ sender, System::EventArgs^ e) {
     this->lbHistorico->Text = this->txtbSaida->Text;
+}
+private: System::Void boxInverter_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
+    if (this->boxInverter->Checked) {
+        this->btnSIN->Text = "arcsin";
+        this->btnCOS->Text = "arccos";
+        this->btnTAN->Text = "arctg";
+    }
+    else {
+        this->btnSIN->Text = "sin";
+        this->btnCOS->Text = "cos";
+        this->btnTAN->Text = "tan";
+    }
+}
+private: System::Void btnClearAll_Click(System::Object^ sender, System::EventArgs^ e) {
+    this->txtbSaida->Text = "0";
+}
+private: System::Void btnBackSpace_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
