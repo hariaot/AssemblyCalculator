@@ -8,8 +8,6 @@
 #include <cstdlib>
 #include <cstring>
 #include <unordered_map>
-
-#include "Tabela.h"
 #include "Polonesa.h"
 
 using namespace std;
@@ -50,9 +48,10 @@ public:
 	//funcao para limpar todos os registros
 	void limpar()
 	{
-		expressao.resize(1);
-		expressao.back() = "";
-	} 
+		expressao.resize(0);
+		
+	}
+
 	//funcao para deletar o ultimo caracter
 	void deletar()
 	{
@@ -115,29 +114,21 @@ public:
 		return;
 	}
 
-	void InserirDigito(String^ digito) //insere o digito apertado na interface dentro de uma string auxliar input 
+	void InserirDigito(string digito) //insere o digito apertado na interface dentro de uma string auxliar input 
 	{
-		string caracter = marshal_as<string>(digito); 
+		
 		if (input.empty()) input = ""; 
 		if (input.length() == 1 && input.back() == '0')
 		{
-			input = caracter;
+			input = digito;
 		}
 		else
 		{
-			input += caracter;
+			input += digito;
 		}
 		return;
 	}
 
-
-	void Inserir(String^ digito)
-	{
-		InserirDigito(digito);
-		Tokenize();
-		input = "";
-	}
-	
 	String^ Resultado(bool Grau) //funcao que chama a conversao e calcula a equacao
 	{
 		

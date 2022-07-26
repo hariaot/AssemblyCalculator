@@ -1,6 +1,7 @@
 #pragma once
 
-
+#define _euler 2.7182818284
+#define _pi 3.14159265359
 
 #include <iostream>
 #include <vector>
@@ -8,7 +9,7 @@
 #include <unordered_map>
 
 #include "Asm.h"
-#include "Tabela.h"
+
 
 using namespace std;
 unordered_map<string, int> opMap = {
@@ -53,6 +54,9 @@ float Calcular(vector<string>& equacao, bool Grau)
 		case '~':
 			a = operacao.negativo(a);
 			break;
+		case 'e':
+			a = operacao.log(a,_euler);
+			break;
 		case 'z':
 			a = operacao.sen(a, Grau);
 			break;
@@ -70,6 +74,9 @@ float Calcular(vector<string>& equacao, bool Grau)
 			break;
 		case 'q':
 			a = operacao.arcsen(a, Grau);
+			break;
+		case 's':
+			a = operacao.sqrt(a);
 			break;
 		}
 		
@@ -104,7 +111,7 @@ float Calcular(vector<string>& equacao, bool Grau)
 				a = operacao.log(a, b);
 				break;
 			case'n':
-				a = operacao.NRaiz(a, b);
+				a = operacao.NRaiz(b, a);
 				break;
 			}
 			pilha.pop_back(); //tira da pilha os dois operandos utilizados 
@@ -117,5 +124,5 @@ float Calcular(vector<string>& equacao, bool Grau)
 			pilha.push_back(atof(token.c_str()));
 		}
 	}
-	return pilha[1]; //retorna o valor na posicao 1 do vetor (é o resultado encontrado), o primeiro elemento tem o valor 0
+	return pilha[0]; //retorna o valor na posicao 0 do vetor (é o resultado encontrado)
 }

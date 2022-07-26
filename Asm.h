@@ -233,7 +233,7 @@ public:
 	float arcsen(float a, bool Grau)
 	{
 		if (Grau == true) a = (a + _pi) / 180;
-		a - asin(a);
+		a  = asin(a);
 		return a;
 	}
 };
