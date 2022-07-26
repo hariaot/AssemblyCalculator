@@ -170,11 +170,20 @@ namespace AssemblyCalculator {
 	private: System::Void panel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 	}
 	private: System::Void btnOK_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->lbWarning->Text = "Inserido";
-		equacao->Inserir(this->txtB1->Text);
-		this->lbEquacao->Text = equacao->MostrarEquacao();
-		this->txtB1->Text = "";
-
+		if (this->txtB1->Text == "")
+		{
+			lbEquacao->Text == "Erro";
+		}
+		else
+		{
+			equacao->limpar();
+			bool Grau = true;
+			equacao->InserirDigito(this->txtB1->Text);
+			this->lbWarning->Text = equacao->Resultado(Grau);
+			this->txtB1->Text = equacao->MostrarEquacao();
+			this->lbEquacao->Text = equacao->MostrarPolonesa();
+		}
+		
 
 	}
 	private: System::Void btnEquacao_Click(System::Object^ sender, System::EventArgs^ e) {
