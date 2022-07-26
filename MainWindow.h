@@ -468,7 +468,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnFCP->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnFCP->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnFCP->Location = System::Drawing::Point(217, 211);
+            this->btnFCP->Location = System::Drawing::Point(218, 211);
             this->btnFCP->Name = L"btnFCP";
             this->btnFCP->Size = System::Drawing::Size(58, 34);
             this->btnFCP->TabIndex = 76;
@@ -485,7 +485,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnABP->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnABP->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnABP->Location = System::Drawing::Point(153, 211);
+            this->btnABP->Location = System::Drawing::Point(154, 211);
             this->btnABP->Name = L"btnABP";
             this->btnABP->Size = System::Drawing::Size(58, 34);
             this->btnABP->TabIndex = 75;
@@ -519,7 +519,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn8->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn8->Location = System::Drawing::Point(153, 251);
+            this->btn8->Location = System::Drawing::Point(154, 251);
             this->btn8->Name = L"btn8";
             this->btn8->Size = System::Drawing::Size(58, 34);
             this->btn8->TabIndex = 73;
@@ -537,7 +537,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn7->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn7->Location = System::Drawing::Point(89, 251);
+            this->btn7->Location = System::Drawing::Point(90, 251);
             this->btn7->Name = L"btn7";
             this->btn7->Size = System::Drawing::Size(58, 34);
             this->btn7->TabIndex = 72;
@@ -572,7 +572,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnEPOWX->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnEPOWX->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnEPOWX->Location = System::Drawing::Point(89, 171);
+            this->btnEPOWX->Location = System::Drawing::Point(90, 171);
             this->btnEPOWX->Name = L"btnEPOWX";
             this->btnEPOWX->Size = System::Drawing::Size(58, 34);
             this->btnEPOWX->TabIndex = 70;
@@ -589,7 +589,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn9->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn9->Location = System::Drawing::Point(217, 251);
+            this->btn9->Location = System::Drawing::Point(218, 251);
             this->btn9->Name = L"btn9";
             this->btn9->Size = System::Drawing::Size(58, 34);
             this->btn9->TabIndex = 69;
@@ -607,7 +607,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn5->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn5->Location = System::Drawing::Point(153, 291);
+            this->btn5->Location = System::Drawing::Point(154, 291);
             this->btn5->Name = L"btn5";
             this->btn5->Size = System::Drawing::Size(58, 34);
             this->btn5->TabIndex = 68;
@@ -625,7 +625,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn4->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn4->Location = System::Drawing::Point(89, 291);
+            this->btn4->Location = System::Drawing::Point(90, 291);
             this->btn4->Name = L"btn4";
             this->btn4->Size = System::Drawing::Size(58, 34);
             this->btn4->TabIndex = 67;
@@ -643,7 +643,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnXPOWY->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnXPOWY->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnXPOWY->Location = System::Drawing::Point(89, 211);
+            this->btnXPOWY->Location = System::Drawing::Point(90, 211);
             this->btnXPOWY->Name = L"btnXPOWY";
             this->btnXPOWY->Size = System::Drawing::Size(58, 34);
             this->btnXPOWY->TabIndex = 66;
@@ -677,7 +677,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn6->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn6->Location = System::Drawing::Point(217, 291);
+            this->btn6->Location = System::Drawing::Point(218, 291);
             this->btn6->Name = L"btn6";
             this->btn6->Size = System::Drawing::Size(58, 34);
             this->btn6->TabIndex = 64;
@@ -695,7 +695,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn2->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn2->Location = System::Drawing::Point(153, 331);
+            this->btn2->Location = System::Drawing::Point(154, 331);
             this->btn2->Name = L"btn2";
             this->btn2->Size = System::Drawing::Size(58, 34);
             this->btn2->TabIndex = 63;
@@ -713,7 +713,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn1->Location = System::Drawing::Point(89, 331);
+            this->btn1->Location = System::Drawing::Point(90, 331);
             this->btn1->Name = L"btn1";
             this->btn1->Size = System::Drawing::Size(58, 34);
             this->btn1->TabIndex = 62;
@@ -765,7 +765,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn3->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn3->Location = System::Drawing::Point(217, 331);
+            this->btn3->Location = System::Drawing::Point(218, 331);
             this->btn3->Name = L"btn3";
             this->btn3->Size = System::Drawing::Size(58, 34);
             this->btn3->TabIndex = 59;
@@ -817,7 +817,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btn0->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn0->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btn0->Location = System::Drawing::Point(153, 371);
+            this->btn0->Location = System::Drawing::Point(154, 371);
             this->btn0->Name = L"btn0";
             this->btn0->Size = System::Drawing::Size(58, 34);
             this->btn0->TabIndex = 56;
@@ -835,7 +835,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnSINAL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnSINAL->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnSINAL->Location = System::Drawing::Point(89, 371);
+            this->btnSINAL->Location = System::Drawing::Point(90, 371);
             this->btnSINAL->Name = L"btnSINAL";
             this->btnSINAL->Size = System::Drawing::Size(58, 34);
             this->btnSINAL->TabIndex = 55;
@@ -886,7 +886,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnDECIMAL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnDECIMAL->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnDECIMAL->Location = System::Drawing::Point(217, 371);
+            this->btnDECIMAL->Location = System::Drawing::Point(218, 371);
             this->btnDECIMAL->Name = L"btnDECIMAL";
             this->btnDECIMAL->Size = System::Drawing::Size(58, 34);
             this->btnDECIMAL->TabIndex = 52;
@@ -903,7 +903,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnPi->Font = (gcnew System::Drawing::Font(L"Arial Narrow", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnPi->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnPi->Location = System::Drawing::Point(152, 172);
+            this->btnPi->Location = System::Drawing::Point(153, 172);
             this->btnPi->Name = L"btnPi";
             this->btnPi->Size = System::Drawing::Size(58, 34);
             this->btnPi->TabIndex = 51;
@@ -920,7 +920,7 @@ private: System::Windows::Forms::Label^ titulo;
             this->btnClearAll->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnClearAll->ForeColor = System::Drawing::SystemColors::ButtonFace;
-            this->btnClearAll->Location = System::Drawing::Point(216, 172);
+            this->btnClearAll->Location = System::Drawing::Point(217, 172);
             this->btnClearAll->Name = L"btnClearAll";
             this->btnClearAll->Size = System::Drawing::Size(58, 34);
             this->btnClearAll->TabIndex = 50;
